@@ -1,0 +1,6 @@
+{
+    "init_workflow": "sd15_img2img_lcm.json",
+    "ckpt_name": "SDHK04.safetensors",
+    "target_resolution": 1024,
+    "seed": 1
+}
