@@ -23,7 +23,8 @@ $ git reset --hard 0cf4e8693945d68000e37fe291f877eff9ef0aaa
 ```
 
 ### 重みのダウンロード
-ComfyUI で下記のワークフローが動作するよう適宜重みを配置してください。ファイルを ComfyUI の画面にアップロードし、読み込んだワークフローが動作すれば構築完了です。
+ComfyUI で動かしたいワークフローが動作するよう適宜重みを配置してください。ファイルを ComfyUI の画面にアップロードし、読み込んだワークフローが動作すれば構築完了です。
+- [img2img_xl](workflows/img2img_xl/workflow_api_debug.json)
 - [scribble_xl](workflows/852_a_scribble_xl/workflow_api_debug.json)
 - [lineart_xl](workflows/kataragi_lineart_xl/workflow_api_debug.json)
 
@@ -31,12 +32,14 @@ ComfyUI で下記のワークフローが動作するよう適宜重みを配置
 ## 使い方
 ２つのターミナルを用意し、片方で ComfyUI を起動し、もう片方でこのリポジトリを起動します。  
 `localhost:8188` につながる状態であれば、リモートサーバーでも使用可能です。
-`PSD-WATCH-INFERENCE` を起動する際に、監視対象の PSD ファイルを指定してください。
+`PSD-WATCH-INFERENCE` を起動する際に、監視対象の PSD ファイルを指定してください。PSD は `1024x1024` で作成することを推奨します。
 ```
 # ComfyUI の起動
 $ python main.py
 
 # PSD-WATCH-INFERENCE の起動
+# img2img_xl を起動する場合
+$ python src/main.py -p <PSDのパス>
 # scribble_xl を起動する場合
 $ python src/main.py -p <PSDのパス> -w workflows/852_a_scribble_xl
 # lineart_xl を起動する場合

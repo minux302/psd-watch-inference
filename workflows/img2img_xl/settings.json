@@ -1,0 +1,8 @@
+{
+    "target_resolution": 1024,
+    "seed": -1,
+    "denoising_strength": 1.0,
+    "prompt": "",
+    "negative_prompt": "nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name,",
+    "optional_settings": {}
+}
