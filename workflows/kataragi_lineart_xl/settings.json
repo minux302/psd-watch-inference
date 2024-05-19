@@ -1,0 +1,42 @@
+{
+    "target_resolution": 1024,
+    "seed": -1,
+    "denoising_strength": 1.0,
+    "prompt": "",
+    "negative_prompt": "nsfw, lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry, artist name,",
+    "optional_settings": {
+        "control_strength": {
+            "id": "53",
+            "type": "slider",
+            "params": {
+                "inputs": {
+                    "name": "strength",
+                    "value": 1.0
+                },
+                "range": [0, 1]
+            }
+        },
+        "control_start_percent": {
+            "id": "53",
+            "type": "slider",
+            "params": {
+                "inputs": {
+                    "name": "start_percent",
+                    "value": 0.0
+                },
+                "range": [0, 1]
+            }
+        },
+        "control_end_percent": {
+            "id": "53",
+            "type": "slider",
+            "params": {
+                "inputs": {
+                    "name": "end_percent",
+                    "value": 1.0
+                },
+                "range": [0, 1]
+            }
+        }
+    }
+}
